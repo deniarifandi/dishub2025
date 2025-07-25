@@ -1,4 +1,3 @@
-this content too:
 
 <?= $this->extend('layouts/main') ?>
 
