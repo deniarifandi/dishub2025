@@ -4,28 +4,34 @@ namespace App\Controllers;
 use App\Libraries\datatable;
 use Config\Database;
 
-class Jukir extends BaseController
+class Dishub_anggota extends BaseController
 {   
     
-    public $table = "jukir";
-    public $primaryKey = "jukir_id";
+    public $table = "dishub_anggota";
+    public $primaryKey = "anggota_id";
     
     public $toSearch = 
     [
-        'Jukir.jukir_nama',
+        'dishub_anggota.anggota_nama',
+        'va_owner.va',
+        'va_owner.hp'
         // 'Divisi.divisi_nama'
     ];
 
     public $selectList= [
-            'Jukir.*'
+            'dishub_anggota.*',
+            // 'va_owner.*'
     ];
 
     public $fieldList = [
-        ['jukir_nama','Jukir Nama'],
+        ['anggota_nama','Anggota Nama'],
+        // ['va_owner_va','VA'],
+        // ['hp','No. HP']
     ];
 
 
     public $joinTable = [
+        ['va_owner','va_owner.id_jukir = dishub_anggota.anggota_id','left']
         // ['Divisi','Divisi.divisi_id = Guru.divisi_id','left']
         // ['kelompok', 'guru.guru_id = kelompok.guru_id','left']
         // ['kelompok', 'kelompok.guru_id = guru.guru_id','left']
@@ -34,6 +40,8 @@ class Jukir extends BaseController
     public $where = [
       // 'Divisi.divisi_id' => ''
     ];
+
+    // public $orderBy = ['va_owner.va' => 'DESC'];
 
     public $dataToShow = [];
 
@@ -48,7 +56,7 @@ class Jukir extends BaseController
 
     public function index()
     {
-        return view('/pages/jukir/index',$this->dataToShow);
+        return view('/pages/dishub_anggota/index',$this->dataToShow);
     }
 
     public function list(){

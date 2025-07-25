@@ -9,7 +9,7 @@
           <div class="container-fluid">
             <!--begin::Row-->
             <div class="row">
-              <div class="col-sm-6"><h3 class="mb-0">Juru Parkir</h3></div>
+              <div class="col-sm-6"><h3 class="mb-0">Catatan Transaksi</h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -36,7 +36,7 @@
                           <?php for ($i=0; $i < count($fieldList); $i++) { 
                             ?><th><?= $fieldList[$i][1]; ?></th><?php 
                           } ?>
-                          <th>action</th>
+                          <th>Action</th>
                       </tr>
                   </thead>
                 </table>

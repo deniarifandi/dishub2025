@@ -1,4 +1,4 @@
-<?= $this->extend('layouts/main') ?>
+  <?= $this->extend('layouts/main') ?>
 
 <?= $this->section('content') ?>
    
@@ -29,30 +29,34 @@
             <!--begin::Row-->
             <div class="row">
               <div class="col-sm-3">
+                <a href="<?= base_url();?>dishub_anggota">
                   <div class="card shadow-sm rounded-4 p-3" style="background-color:  #d3f9d8; border: 1px solid  #b2f2bb">
-                  <div class="d-flex align-items-center">
-                    <div class="icon bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px;">
-                      <i class="bi bi-chat-dots fs-4"></i>
-                    </div>
-                    <div>
-                      <p class="mb-1 text-muted small">Juru Parkir</p>
-                      <h5 class="mb-0 fw-semibold">12</h5>
+                    <div class="d-flex align-items-center">
+                      <div class="icon bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px;">
+                        <i class="bi bi-chat-dots fs-4"></i>
+                      </div>
+                      <div>
+                        <p class="mb-1 text-muted small">Juru Parkir</p>
+                        <h5 class="mb-0 fw-semibold">0</h5>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
                <div class="col-sm-3">
-                   <div class="card shadow-sm rounded-4 p-3" style="background-color:  #fff3bf; border: 1px solid  #ffec99">
-                  <div class="d-flex align-items-center">
-                    <div class="icon bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px;">
-                      <i class="bi bi-chat-dots fs-4"></i>
-                    </div>
-                    <div>
-                      <p class="mb-1 text-muted small">Messages</p>
-                      <h5 class="mb-0 fw-semibold">12</h5>
+                <a href="<?= base_url();?>transaksi">
+                  <div class="card shadow-sm rounded-4 p-3" style="background-color:  #fff3bf; border: 1px solid  #ffec99">
+                    <div class="d-flex align-items-center">
+                      <div class="icon bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px;">
+                        <i class="bi bi-chat-dots fs-4"></i>
+                      </div>
+                      <div>
+                        <p class="mb-1 text-muted small">Catatan Transaksi</p>
+                        <h5 class="mb-0 fw-semibold">0</h5>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
                <div class="col-sm-3">
                    <div class="card shadow-sm rounded-4 p-3" style="background-color:  #ffdce0; border: 1px solid  #f5b9bd">
@@ -62,7 +66,7 @@
                     </div>
                     <div>
                       <p class="mb-1 text-muted small">Messages</p>
-                      <h5 class="mb-0 fw-semibold">12</h5>
+                      <h5 class="mb-0 fw-semibold">0</h5>
                     </div>
                   </div>
                 </div>
@@ -75,7 +79,7 @@
                     </div>
                     <div>
                       <p class="mb-1 text-muted small">Messages</p>
-                      <h5 class="mb-0 fw-semibold">12</h5>
+                      <h5 class="mb-0 fw-semibold">0</h5>
                     </div>
                   </div>
                 </div>

@@ -3,29 +3,39 @@
 namespace App\Controllers;
 use App\Libraries\datatable;
 use Config\Database;
+use CodeIgniter\RESTful\ResourceController;
 
-class Jukir extends BaseController
+class Transaksi extends ResourceController
 {   
     
-    public $table = "jukir";
-    public $primaryKey = "jukir_id";
+    public $table = "transaksi";
+    public $primaryKey = "transaksi_id";
     
     public $toSearch = 
     [
-        'Jukir.jukir_nama',
+        'transaksi.',
+        // 'va_owner.va',
+        // 'va_owner.hp'
         // 'Divisi.divisi_nama'
     ];
 
     public $selectList= [
-            'Jukir.*'
+            'transaksi.*',
+            // 'va_owner.*'
     ];
 
     public $fieldList = [
-        ['jukir_nama','Jukir Nama'],
+        ['transaksi_va','ID Transaksi'],
+        ['nominal','Nominal'],
+        ['tanggal','Tanggal']
+        // ['anggota_nama','Anggota Nama'],
+        // ['va','VA'],
+        // ['hp','No. HP']
     ];
 
 
     public $joinTable = [
+        // ['va_owner','va_owner.id_jukir = anggota_id','left']
         // ['Divisi','Divisi.divisi_id = Guru.divisi_id','left']
         // ['kelompok', 'guru.guru_id = kelompok.guru_id','left']
         // ['kelompok', 'kelompok.guru_id = guru.guru_id','left']
@@ -34,6 +44,8 @@ class Jukir extends BaseController
     public $where = [
       // 'Divisi.divisi_id' => ''
     ];
+
+    // public $orderBy = ['va_owner.va' => 'DESC'];
 
     public $dataToShow = [];
 
@@ -48,7 +60,7 @@ class Jukir extends BaseController
 
     public function index()
     {
-        return view('/pages/jukir/index',$this->dataToShow);
+        return view('/pages/transaksi/index',$this->dataToShow);
     }
 
     public function list(){

@@ -1,3 +1,5 @@
+this content too:
+
 <?= $this->extend('layouts/main') ?>
 
 <?= $this->section('content') ?>
@@ -55,6 +57,9 @@
         $('#<?php $table ?>Table').DataTable({
             processing: true,
             serverSide: true,
+            order:[
+              [2,'desc'],
+            ],
             ajax: {
                 url: "<?= base_url($table.'/data') ?>",
                 type: "POST"
