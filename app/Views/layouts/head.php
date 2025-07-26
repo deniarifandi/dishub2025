@@ -26,6 +26,7 @@
     <!-- Skip links will be dynamically added by accessibility.js -->
     <meta name="supported-color-schemes" content="light dark" />
     <link rel="preload" href="<?= base_url();?>css/adminlte.css" as="style" />
+
     <!--end::Accessibility Features-->
     <!--begin::Fonts-->
     <link
@@ -53,5 +54,9 @@
     <!--end::Third Party Plugin(Bootstrap Icons)-->
     <!--begin::Required Plugin(AdminLTE)-->
     <link rel="stylesheet" href="<?= base_url();?>css/adminlte.css" />
+    <link rel="stylesheet" href="<?= base_url();?>css/adminltesoft.css" as="style" />
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!--end::Required Plugin(AdminLTE)-->
   </head>

@@ -1,11 +1,11 @@
-
+     <?= view('layouts\head') ?>
   <!--end::Head-->
   <!--begin::Body-->
-  <body class="layout-fixed sidebar-expand-lg sidebar-open bg-body-tertiary">
+  <body class="layout-fixed sidebar-expand-lg sidebar-open" style="background: #e8f4fa;">
     <!--begin::App Wrapper-->
     <div class="app-wrapper">
       <!--begin::Header-->
-      <nav class="app-header navbar navbar-expand bg-body">
+      <nav class="app-header navbar navbar-expand bg-body" style="background:white !important;">
         <!--begin::Container-->
         <div class="container-fluid">
           <!--begin::Start Navbar Links-->

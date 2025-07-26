@@ -1,18 +1,9 @@
 <?= $this->extend('layouts/main') ?>
 
       <?= $this->section('content-top') ?>
-      <!--   <div class="app-content-top-area">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6"><div>App Content Top Area</div></div>
-              <div class="col-md-6 text-end">
-                <button type="submit" class="btn btn-primary" name="save" value="create">
-                  Create Admin
-                </button>
-              </div>
-            </div>
-          </div>
-        </div> -->
+      
+   
+
       <?= $this->endSection() ?>
 
       <?= $this->section('content-header') ?>
@@ -36,21 +27,52 @@
       <?= $this->endSection() ?>
 
       <?= $this->section('content-app') ?>
-         <div class="app-content">
-          <!--begin::Container-->
-          <div class="container-fluid">
-            <!--begin::Row-->
-            <div class="row">
-              <div class="col-12">
-                <!-- Default box -->
-                
-                <!-- /.card -->
+          <div class="app-content">
+            <div class="container-fluid">
+              <div class="row">
+
+                <!-- Anggota -->
+                <div class="col-md-3 col-sm-6 col-12">
+                  <a href="<?= base_url(); ?>anggota" class="text-decoration-none">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-soft-blue"><i class="fas fa-users"></i></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">Anggota</span>
+                        <span class="info-box-number">1,410</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Transaksi -->
+                <div class="col-md-3 col-sm-6 col-12">
+                  <a href="<?= base_url(); ?>transaksi" class="text-decoration-none">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-soft-teal"><i class="fas fa-exchange-alt"></i></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">Transaksi</span>
+                        <span class="info-box-number">1,410</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Tagihan -->
+                <div class="col-md-3 col-sm-6 col-12">
+                  <a href="<?= base_url(); ?>tagihan" class="text-decoration-none">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-soft-yellow"><i class="fas fa-file-invoice-dollar"></i></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">Tagihan</span>
+                        <span class="info-box-number">1,410</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
               </div>
             </div>
-            <!--end::Row-->
           </div>
-          <!--end::Container-->
-        </div>
       <?= $this->endSection() ?>
 
        <?= $this->section('content-bottom') ?>

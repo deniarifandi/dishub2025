@@ -1,0 +1,36 @@
+
+  .info-box {
+    border-radius: 0.75rem;
+    transition: box-shadow 0.3s ease;
+    background-color: #f8f9fa; /* Soft light background */
+    color: #343a40; /* Darker text for contrast */
+  }
+
+  .info-box:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+
+  .info-box-icon {
+    border-radius: 0.75rem 0 0 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dee2e6; /* Soft neutral */
+    color: #495057;
+  }
+
+  .info-box-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .info-box-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  /* Custom icon colors */
+  .bg-soft-blue    { background-color: #cfe2ff !important; color: #084298 !important; }
+  .bg-soft-teal    { background-color: #d1e7dd !important; color: #0f5132 !important; }
+  .bg-soft-yellow  { background-color: #fff3cd !important; color: #664d03 !important; }
